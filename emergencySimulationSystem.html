@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Emergency-Simulation-System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<header id="header">
+			<div class="inner">
+				<h1><strong>Emergency Simulation System</strong>
+			</div>
+		</header>
+
+		<div id="main">
+
+				<section id="one">
+					<h2>Description</h2>
+					<p>
+						This is a Emergency Simulation System made using java 
+						which genarates and displays the emergenices based on 
+						the input text file and also recives updates from responders 
+						on the sate of the emergency.
+					</p>
+				</section>
+
+				<section id="two">
+					<h2>How the application works</h2>
+					<p> 
+						When a fire emergency is created it is created with an idle state when the 
+						runtime is equal to the start time it switches to low intensity from idle 
+						and switches to high intensity if there are no responders. If responders are present 
+						and fire is at low intensity it changes to the inactive state after low to end time. 
+						If responders are present at a fire with high intensity state changes from high to low to inactive.<br/>
+
+						Flood and chemical emergencies have the states idle active and inactive when runtime is equal to the 
+						start time it switches from idle to active and if responders are present the state will change from 
+						active to inactive depending on the end time.
+
+					</p>
+				</section>
+
+				<section id="three">
+					<h2>Object oriented design patterns used</h2>
+						<p>
+							Observer pattern was used to update the time values in all the emergencies created in real time.<br/>
+
+							State pattern was used to set states to fire flood and chemical emergencies.
+						</p>
+					<ul class="actions">
+					</ul>
+				</section>
+
+				<a href="https://github.com/Gavsh96/Emergency-Simulation-System" class="button">View Code</a>
+
+		</div>
+		
+		<footer id="footer">
+			<div class="inner">
+				
+			</div>
+		</footer>
+
+		
+	</body>
+
+</html>	
